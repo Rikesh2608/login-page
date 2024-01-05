@@ -140,7 +140,7 @@ function sign_up(){
         signup_btn.innerHTML=`Register`;
         signup_foot.innerHTML=`Already have an Account`;
         signup_foot.classList.remove('account-created');
-        },2000);
+        },2500);
     }
 }
 function signin_acc(){
@@ -170,7 +170,9 @@ function signin_acc(){
             }
         }
         else{
-            login_foot.innerHTML=`Email not Exist, Please enter valid email !!`;
+            login_foot.innerHTML=`
+            Invalid Email 
+            `;
         }
         login_foot.classList.add('account-created');
         clearvalues();
@@ -179,7 +181,7 @@ function signin_acc(){
             <div class="login-create">Create an account</div>
             <div class="forgot-pass">Forgot your password</div>`;
             login_foot.classList.remove('account-created');
-        },2000);
+        },2500);
     }
 }
 
